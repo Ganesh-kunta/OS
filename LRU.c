@@ -45,7 +45,13 @@ int main()
             time[pos] = counter;
             faults++;
         }
+        printf("After Page %d : ", pages[i]);
+    for(j = 0; j < f; j++)
+    {
+        printf("%d ", frames[j]);
     }
+    printf("\n");
+}
     printf("Total Page Faults (LRU): %d\n", faults);
     return 0;
 }
